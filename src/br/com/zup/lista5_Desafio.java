@@ -10,6 +10,7 @@ public class lista5_Desafio {
         int contador = 0;
         double maiorValor = 0;
         double menorValor = 0;
+        double soma = 0;
 
 
         System.out.println("Por favor digite a quantidade de números desejados: ");
@@ -22,6 +23,7 @@ public class lista5_Desafio {
         while (contador < (quantidadeNumeros -1)) {
             System.out.println("Digite um numero");
             valorLido = leitor.nextDouble();
+            soma += valorLido;
 
             if (valorLido >=0 && valorLido < menorValor) {
                 menorValor = valorLido;
@@ -33,6 +35,6 @@ public class lista5_Desafio {
         }
         System.out.println("O menor valor digitado foi: " + menorValor);
         System.out.println("O maior valor digitado foi: " + maiorValor);
-        System.out.println("A soma do maior valor e do menor valor digitados é: " + (menorValor + maiorValor));
+        System.out.println("A soma dos valores digitados é: " + soma);
     }
 }
