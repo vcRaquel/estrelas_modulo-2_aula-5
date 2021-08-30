@@ -25,10 +25,11 @@ public class lista5_Desafio {
             valorLido = leitor.nextDouble();
             soma += valorLido;
 
-            if (valorLido >=0 && valorLido < menorValor) {
+            if (valorLido >=0 & valorLido < menorValor) {
                 menorValor = valorLido;
             }else{
                 maiorValor = valorLido;
+                soma += valorLido;
             }
             contador += 1;
 
