@@ -9,16 +9,21 @@ public class lista5_Desafio {
         int quantidadeNumeros = 0;
         int contador = 0;
         double maiorValor = 0;
-        double menorValor = 1;
+        double menorValor = 0;
 
 
         System.out.println("Por favor digite a quantidade de números desejados: ");
         quantidadeNumeros = leitor.nextInt();
 
-        while (contador < quantidadeNumeros) {
+        System.out.println("Digite um numero");
+        double valorLido = leitor.nextDouble();
+        menorValor = valorLido;
+
+        while (contador < (quantidadeNumeros -1)) {
             System.out.println("Digite um numero");
-            double valorLido = leitor.nextDouble();
-            if (valorLido < menorValor) {
+            valorLido = leitor.nextDouble();
+
+            if (valorLido >=0 && valorLido < menorValor) {
                 menorValor = valorLido;
             }else{
                 maiorValor = valorLido;
